@@ -1,14 +1,14 @@
 //
-//  ActivityViewController.swift
+//  SignViewController.swift
 //  Traveller App
 //
-//  Created by Luis Farré Castán on 19/12/20.
-//  Copyright © 2020 Alexander Roca - Joan Esteban. All rights reserved.
+//  Created by Luis Farré Castán on 4/2/21.
+//  Copyright © 2021 Alexander Roca - Joan Esteban. All rights reserved.
 //
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class SignViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

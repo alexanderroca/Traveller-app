@@ -2,7 +2,7 @@
 //  SignInViewController.swift
 //  Traveller App
 //
-//  Created by Luis Farré Castán on 3/2/21.
+//  Created by Luis Farré Castán on 4/2/21.
 //  Copyright © 2021 Alexander Roca - Joan Esteban. All rights reserved.
 //
 
@@ -24,9 +24,8 @@ class SignInViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
     @IBAction func ifPressed(_ sender: Any) {
-        
     }
+    
 }
