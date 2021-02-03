@@ -10,14 +10,30 @@ import UIKit
 
 class HomeViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
 
+    @IBOutlet weak var activityType: UISegmentedControl!
+    
     @IBOutlet weak var activitiesCollectionView: UICollectionView!
     
-    let activities = ["Forest Camping", "Fishing time"]
-    let activityImages: [UIImage] = [
+    let experiences  = ["Forest Camping", "Fishing time"]
+    var adventures = ["Forest Camping"]
+    var activities = ["Fishing time"]
+    
+    let activityImages0: [UIImage] = [
         UIImage(named: "Card2")!,
         UIImage(named: "Card1")!,
     ]
-    let locations = ["La Seu d'Urgell, Spain", "Alt Empordà, Spain"]
+    
+    let activityImages1: [UIImage] = [
+        UIImage(named: "Card2")!
+    ]
+    
+    let activityImages2: [UIImage] = [
+        UIImage(named: "Card1")!
+    ]
+    
+    let locations0 = ["La Seu d'Urgell, Spain", "Alt Empordà, Spain"]
+    let locations1 = ["La Seu d'Urgell, Spain"]
+    let locations2 = ["Alt Empordà, Spain"]
     
     let typeActivities = ["Hiking", "Ski", "Sky Diving", "Skateboard"]
     let typeActivityImages: [UIImage] = [
@@ -31,16 +47,46 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
         super.viewDidLoad()
     }
 
+    
+    @IBAction func segmentedSelected(_ sender: Any) {
+        activitiesCollectionView.reloadData()
+        activitiesCollectionView.reloadItems(at: activitiesCollectionView.indexPathsForVisibleItems)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return activities.count
+        
+        switch activityType.selectedSegmentIndex {
+            case 0: return experiences.count
+            case 1: return adventures.count
+            case 2: return activities.count
+            default: return 0
+        }   //switch
+
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ActivityCollectionViewCell
-        cell.activity.text = activities[indexPath.item]
-        cell.activityImage.image = activityImages[indexPath.item]
-        cell.location.text = locations[indexPath.item]
+        
+        switch activityType.selectedSegmentIndex {
+            case 0:
+                cell.activity.text = experiences[indexPath.item]
+                cell.activityImage.image = activityImages0[indexPath.item]
+                cell.location.text = locations0[indexPath.item]
+                break
+            case 1:
+                cell.activity.text = adventures[indexPath.item]
+                cell.activityImage.image = activityImages1[indexPath.item]
+                cell.location.text = locations1[indexPath.item]
+                break
+            case 2:
+                cell.activity.text = activities[indexPath.item]
+                cell.activityImage.image = activityImages2[indexPath.item]
+                cell.location.text = locations2[indexPath.item]
+                break
+            default: break
+        }   //switch
+    
         return cell
     }
     
@@ -48,9 +94,23 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
         if collectionView == self.activitiesCollectionView{
             let vc = storyboard?.instantiateViewController(withIdentifier: "DetailedViewController") as? DetailedViewController
             
-            vc?.name = activities[indexPath.row]
-            vc?.image = activityImages[indexPath.row]
-            vc?.location = locations[indexPath.row]
+            switch activityType.selectedSegmentIndex {
+                case 0:
+                    vc?.name = experiences[indexPath.row]
+                    vc?.image = activityImages0[indexPath.row]
+                    vc?.location = locations0[indexPath.row]
+                    break
+                case 1:
+                    vc?.name = adventures[indexPath.row]
+                    vc?.image = activityImages1[indexPath.row]
+                    vc?.location = locations1[indexPath.row]
+                case 2:
+                    vc?.name = activities[indexPath.row]
+                    vc?.image = activityImages2[indexPath.row]
+                    vc?.location = locations2[indexPath.row]
+                default: break
+            }   //switch
+            
             self.navigationController?.pushViewController(vc!, animated: true)
         }
     }
