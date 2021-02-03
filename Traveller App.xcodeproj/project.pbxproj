@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2C17C525CA0F0D001CD850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C17C425CA0F0C001CD850 /* GoogleService-Info.plist */; };
+		3A2C17C825CA1E24001CD850 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C17C725CA1E24001CD850 /* SignInViewController.swift */; };
 		3AF86828258EA85200415D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86827258EA85200415D45 /* AppDelegate.swift */; };
 		3AF8682A258EA85200415D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86829258EA85200415D45 /* ViewController.swift */; };
 		3AF8682D258EA85200415D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8682B258EA85200415D45 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A2C17C425CA0F0C001CD850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A2C17C725CA1E24001CD850 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3AF86824258EA85200415D45 /* Traveller App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traveller App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF86827258EA85200415D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF86829258EA85200415D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A2C17C625CA1E09001CD850 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3A2C17C725CA1E24001CD850 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		3AF8681B258EA85200415D45 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 		3AF86826258EA85200415D45 /* Traveller App */ = {
 			isa = PBXGroup;
 			children = (
+				3A2C17C625CA1E09001CD850 /* SignIn */,
 				3AF86860258EB8EE00415D45 /* Settings */,
 				3AF8685F258EB8E200415D45 /* Search */,
 				3AF8685E258EB8D700415D45 /* Activity */,
@@ -122,6 +135,7 @@
 				3AF8682B258EA85200415D45 /* Main.storyboard */,
 				3AF8682E258EA85200415D45 /* Assets.xcassets */,
 				3AF86830258EA85200415D45 /* LaunchScreen.storyboard */,
+				3A2C17C425CA0F0C001CD850 /* GoogleService-Info.plist */,
 				3AF86833258EA85200415D45 /* Info.plist */,
 			);
 			path = "Traveller App";
@@ -297,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF86832258EA85200415D45 /* LaunchScreen.storyboard in Resources */,
+				3A2C17C525CA0F0D001CD850 /* GoogleService-Info.plist in Resources */,
 				3AF8682F258EA85200415D45 /* Assets.xcassets in Resources */,
 				3AF8682D258EA85200415D45 /* Main.storyboard in Resources */,
 			);
@@ -323,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2C17C825CA1E24001CD850 /* SignInViewController.swift in Sources */,
 				3AF8686D258ECA6500415D45 /* ActivityCollectionViewCell.swift in Sources */,
 				3AF8685A258EB84E00415D45 /* SearchViewController.swift in Sources */,
 				3AF86877258FC22A00415D45 /* DetailedViewController.swift in Sources */,
@@ -501,7 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Traveller App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LaSalle.Traveller-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "---com.LaSalle.AppTraveller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Traveller App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "LaSalle.Traveller-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "---com.LaSalle.AppTraveller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

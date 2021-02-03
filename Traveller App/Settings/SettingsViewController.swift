@@ -9,7 +9,15 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
+    @IBOutlet weak var _userImage: UIImageView!
+    @IBOutlet weak var _name: UILabel!
+    @IBOutlet weak var _username: UILabel!
+    @IBOutlet weak var _dateOfBirth: UILabel!
+    @IBOutlet weak var _phone: UILabel!
+    @IBOutlet weak var _email: UILabel!
+    @IBOutlet weak var _country: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +30,15 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setUserInfo(userImage:UIImage, name:String, username:String, dateOfBirth:String, phone:String, email:String, country:String){
+        
+        self._userImage.image = userImage
+        self._name.text = name
+        self._username.text = username
+        self._dateOfBirth.text = dateOfBirth
+        self._phone.text = phone
+        self._email.text = email
+        self._country.text = country
     }
-    */
 
 }
