@@ -25,7 +25,7 @@
 		3AF86877258FC22A00415D45 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86876258FC22A00415D45 /* DetailedViewController.swift */; };
 		9DE2A4937B358C9D37ADA59D /* libPods-Traveller AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 662C59B24E99F48D0732101D /* libPods-Traveller AppTests.a */; };
 		A8501F79AB5563C9F6D06700 /* libPods-Traveller App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16281C9297E4B3C62DF9A11 /* libPods-Traveller App.a */; };
-		E53C8CE225CAE9C3009FAAFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E53C8CE125CAE9C3009FAAFD /* GoogleService-Info.plist */; };
+		E53C8D0625CAFC02009FAAFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E53C8D0525CAFC02009FAAFD /* GoogleService-Info.plist */; };
 		FAE3370F91E3E9A1028AA8F4 /* libPods-Traveller App-Traveller AppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74964D864C0925ADF32D0D /* libPods-Traveller App-Traveller AppUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 		B5E5E4A615D174F733FC8F0D /* Pods-Traveller AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.release.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B831EB67D91F6A572549C8FB /* Pods-Traveller App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App.debug.xcconfig"; path = "Target Support Files/Pods-Traveller App/Pods-Traveller App.debug.xcconfig"; sourceTree = "<group>"; };
 		BC74964D864C0925ADF32D0D /* libPods-Traveller App-Traveller AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller App-Traveller AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E53C8CE125CAE9C3009FAAFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E53C8D0525CAFC02009FAAFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD37ADA57F0B8EDD9EA27E3E /* Pods-Traveller AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +120,7 @@
 		3AF8681B258EA85200415D45 = {
 			isa = PBXGroup;
 			children = (
-				E53C8CE125CAE9C3009FAAFD /* GoogleService-Info.plist */,
+				E53C8D0525CAFC02009FAAFD /* GoogleService-Info.plist */,
 				3AF86826258EA85200415D45 /* Traveller App */,
 				3AF8683B258EA85200415D45 /* Traveller AppTests */,
 				3AF86846258EA85200415D45 /* Traveller AppUITests */,
@@ -240,7 +240,6 @@
 				FD37ADA57F0B8EDD9EA27E3E /* Pods-Traveller AppTests.debug.xcconfig */,
 				B5E5E4A615D174F733FC8F0D /* Pods-Traveller AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -355,8 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF86832258EA85200415D45 /* LaunchScreen.storyboard in Resources */,
-				E53C8CE225CAE9C3009FAAFD /* GoogleService-Info.plist in Resources */,
 				3AF8682F258EA85200415D45 /* Assets.xcassets in Resources */,
+				E53C8D0625CAFC02009FAAFD /* GoogleService-Info.plist in Resources */,
 				3AF8682D258EA85200415D45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
