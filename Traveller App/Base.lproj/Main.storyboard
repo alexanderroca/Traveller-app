@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgo-JQ-qGI">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lgo-JQ-qGI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,18 +38,16 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Username..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtb-lr-neY">
                                 <rect key="frame" x="81" y="266" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Password..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVN-kb-GDI">
                                 <rect key="frame" x="81" y="352" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhu-EC-T3V">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhu-EC-T3V">
                                 <rect key="frame" x="81" y="404" width="212" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.68248665730452851" blue="0.12475201926666657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,8 +67,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="bg"/>
                         <viewLayoutGuide key="safeArea" id="1jG-ap-hEJ"/>
+                        <color key="backgroundColor" name="bg"/>
                     </view>
                     <connections>
                         <outlet property="password" destination="wVN-kb-GDI" id="pth-2Q-JxO"/>
@@ -111,7 +107,7 @@
                 <navigationController id="Wcc-1U-89B" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Activity" image="activity" id="5iN-rs-DKk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iv9-nG-TuL">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -127,10 +123,10 @@
             <objects>
                 <viewController id="ck5-LO-bLJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VEX-KT-jDY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.38746652209999999" blue="0.28995138529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="B1L-qI-T6z"/>
+                        <color key="backgroundColor" red="1" green="0.38746652209999999" blue="0.28995138529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Activity" id="KSP-G6-skH"/>
                 </viewController>
@@ -144,7 +140,7 @@
                 <navigationController id="6V9-cE-vkC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="x5e-fN-K49"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W1o-OQ-lSJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -160,7 +156,7 @@
             <objects>
                 <viewController id="f6B-eJ-D2s" customClass="SearchViewController" customModule="Traveller_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mGl-f1-vOp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Instert text..." translatesAutoresizingMaskIntoConstraints="NO" id="baW-pw-uiT">
@@ -169,8 +165,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" name="bg"/>
                         <viewLayoutGuide key="safeArea" id="0no-Bs-aZd"/>
+                        <color key="backgroundColor" name="bg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="Eq7-iB-lqy"/>
                 </viewController>
@@ -184,7 +180,7 @@
                 <navigationController id="3yG-pL-Zp6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="Jux-aJ-eLd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XWb-Vk-nQH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -200,7 +196,7 @@
             <objects>
                 <viewController id="f3U-8Q-vzg" customClass="HomeViewController" customModule="Traveller_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sxw-z1-8c4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nRM-fP-Kbc">
@@ -285,8 +281,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="bg"/>
                         <viewLayoutGuide key="safeArea" id="z3N-aK-HFQ"/>
+                        <color key="backgroundColor" name="bg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="fxO-rK-ApN"/>
                     <connections>
@@ -303,7 +299,7 @@
             <objects>
                 <viewController storyboardIdentifier="DetailedViewController" id="lKf-gG-PWe" customClass="DetailedViewController" customModule="Traveller_App" customModuleProvider="target" sceneMemberID="viewController">
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="eBm-aR-6Ri">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="680"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yq7-lW-RVK">
@@ -401,8 +397,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="bg"/>
                         <viewLayoutGuide key="safeArea" id="cAk-Kb-kLE"/>
+                        <color key="backgroundColor" name="bg"/>
                     </scrollView>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
@@ -426,7 +422,7 @@
                 <navigationController id="tXj-xO-3sF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="Setting" id="3pe-rb-wzk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YpU-98-Gab">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -442,7 +438,7 @@
             <objects>
                 <viewController id="fGv-8T-jHh" customClass="SettingsViewController" customModule="Traveller_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Efv-n0-0RG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FZ-4n-4Mg">
@@ -548,8 +544,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="bg"/>
                         <viewLayoutGuide key="safeArea" id="DX5-fk-c0E"/>
+                        <color key="backgroundColor" name="bg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="8zF-k2-Zde"/>
                     <connections>
