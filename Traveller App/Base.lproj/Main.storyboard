@@ -56,7 +56,6 @@
                                 </state>
                                 <connections>
                                     <action selector="ifPressed:" destination="lgo-JQ-qGI" eventType="touchUpInside" id="iOG-7X-ajC"/>
-                                    <segue destination="D82-NA-nau" kind="show" id="Qem-9X-dcz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AppTraveller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-w6-oek">
@@ -74,6 +73,7 @@
                         <outlet property="password" destination="wVN-kb-GDI" id="pth-2Q-JxO"/>
                         <outlet property="signIn" destination="bhu-EC-T3V" id="eou-fO-vYd"/>
                         <outlet property="username" destination="qtb-lr-neY" id="wTY-P0-WeZ"/>
+                        <segue destination="D82-NA-nau" kind="show" identifier="home" id="cc2-dY-hQp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oht-Z5-lwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,6 +84,7 @@
         <scene sceneID="w3i-WN-a5q">
             <objects>
                 <tabBarController title="Main" id="D82-NA-nau" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gWi-KS-3gu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OL2-vv-awi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -400,6 +401,7 @@
                         <viewLayoutGuide key="safeArea" id="cAk-Kb-kLE"/>
                         <color key="backgroundColor" name="bg"/>
                     </scrollView>
+                    <navigationItem key="navigationItem" id="Lbq-wy-TmW"/>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
                         <outlet property="activityDescription" destination="FK5-4e-34t" id="vWC-cZ-KtX"/>

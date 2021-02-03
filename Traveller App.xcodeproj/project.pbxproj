@@ -23,10 +23,10 @@
 		3AF86872258FACC100415D45 /* TypeActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86871258FACC100415D45 /* TypeActivityCollectionViewCell.swift */; };
 		3AF86875258FC16900415D45 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86874258FC16900415D45 /* RatingControl.swift */; };
 		3AF86877258FC22A00415D45 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86876258FC22A00415D45 /* DetailedViewController.swift */; };
-		9DE2A4937B358C9D37ADA59D /* libPods-Traveller AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 662C59B24E99F48D0732101D /* libPods-Traveller AppTests.a */; };
-		A8501F79AB5563C9F6D06700 /* libPods-Traveller App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16281C9297E4B3C62DF9A11 /* libPods-Traveller App.a */; };
+		50BA2FF3015C779ADBC533BE /* libPods-Traveller AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C24166E34E01C39187ED47D /* libPods-Traveller AppTests.a */; };
+		56E60D26BFBD33658F3B1A51 /* libPods-Traveller App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA3AECA2A50C5EE9CAE52E1 /* libPods-Traveller App.a */; };
+		5C6BE753CBE64BADC5C2A2C1 /* libPods-Traveller App-Traveller AppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B54CA0DA179FE78F839B6F7 /* libPods-Traveller App-Traveller AppUITests.a */; };
 		E53C8D0625CAFC02009FAAFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E53C8D0525CAFC02009FAAFD /* GoogleService-Info.plist */; };
-		FAE3370F91E3E9A1028AA8F4 /* libPods-Traveller App-Traveller AppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74964D864C0925ADF32D0D /* libPods-Traveller App-Traveller AppUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17417A6D54AC33D866BB3E09 /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App-Traveller AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Traveller App-Traveller AppUITests/Pods-Traveller App-Traveller AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		198AEC5D3B7236F44D53FFAA /* Pods-Traveller App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App.release.xcconfig"; path = "Target Support Files/Pods-Traveller App/Pods-Traveller App.release.xcconfig"; sourceTree = "<group>"; };
-		372863D7495CB82323A687D6 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App-Traveller AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traveller App-Traveller AppUITests/Pods-Traveller App-Traveller AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FACB18F27E167AA3E5366D6 /* Pods-Traveller App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App.release.xcconfig"; path = "Target Support Files/Pods-Traveller App/Pods-Traveller App.release.xcconfig"; sourceTree = "<group>"; };
 		3A2C17C725CA1E24001CD850 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3AF86824258EA85200415D45 /* Traveller App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traveller App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF86827258EA85200415D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,13 +70,15 @@
 		3AF86871258FACC100415D45 /* TypeActivityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeActivityCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AF86874258FC16900415D45 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		3AF86876258FC22A00415D45 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
-		662C59B24E99F48D0732101D /* libPods-Traveller AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A16281C9297E4B3C62DF9A11 /* libPods-Traveller App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5E5E4A615D174F733FC8F0D /* Pods-Traveller AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.release.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		B831EB67D91F6A572549C8FB /* Pods-Traveller App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App.debug.xcconfig"; path = "Target Support Files/Pods-Traveller App/Pods-Traveller App.debug.xcconfig"; sourceTree = "<group>"; };
-		BC74964D864C0925ADF32D0D /* libPods-Traveller App-Traveller AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller App-Traveller AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B54CA0DA179FE78F839B6F7 /* libPods-Traveller App-Traveller AppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller App-Traveller AppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFB9D1273398D1F901626C7 /* Pods-Traveller AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.release.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4C24166E34E01C39187ED47D /* libPods-Traveller AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B51BDCA2119C0A4B3262B6F /* Pods-Traveller App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App.debug.xcconfig"; path = "Target Support Files/Pods-Traveller App/Pods-Traveller App.debug.xcconfig"; sourceTree = "<group>"; };
+		94BCB0CB3FB617880A4C6862 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App-Traveller AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Traveller App-Traveller AppUITests/Pods-Traveller App-Traveller AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDA3AECA2A50C5EE9CAE52E1 /* libPods-Traveller App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Traveller App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16442A77AA08830E92CC34C /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller App-Traveller AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Traveller App-Traveller AppUITests/Pods-Traveller App-Traveller AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E53C8D0525CAFC02009FAAFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FD37ADA57F0B8EDD9EA27E3E /* Pods-Traveller AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBCFE21D131446C13E168C6E /* Pods-Traveller AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Traveller AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Traveller AppTests/Pods-Traveller AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8501F79AB5563C9F6D06700 /* libPods-Traveller App.a in Frameworks */,
+				56E60D26BFBD33658F3B1A51 /* libPods-Traveller App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE2A4937B358C9D37ADA59D /* libPods-Traveller AppTests.a in Frameworks */,
+				50BA2FF3015C779ADBC533BE /* libPods-Traveller AppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE3370F91E3E9A1028AA8F4 /* libPods-Traveller App-Traveller AppUITests.a in Frameworks */,
+				5C6BE753CBE64BADC5C2A2C1 /* libPods-Traveller App-Traveller AppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 				3AF86846258EA85200415D45 /* Traveller AppUITests */,
 				3AF86825258EA85200415D45 /* Products */,
 				F7C0FC01A1D3DBFE49BB4DB3 /* Pods */,
-				83DA77AE5555C5EB4D6E0FF7 /* Frameworks */,
+				A4BC4D0D38847ABF82E87E33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,12 +220,12 @@
 			path = CollectionCells;
 			sourceTree = "<group>";
 		};
-		83DA77AE5555C5EB4D6E0FF7 /* Frameworks */ = {
+		A4BC4D0D38847ABF82E87E33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A16281C9297E4B3C62DF9A11 /* libPods-Traveller App.a */,
-				BC74964D864C0925ADF32D0D /* libPods-Traveller App-Traveller AppUITests.a */,
-				662C59B24E99F48D0732101D /* libPods-Traveller AppTests.a */,
+				BDA3AECA2A50C5EE9CAE52E1 /* libPods-Traveller App.a */,
+				3B54CA0DA179FE78F839B6F7 /* libPods-Traveller App-Traveller AppUITests.a */,
+				4C24166E34E01C39187ED47D /* libPods-Traveller AppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,12 +233,12 @@
 		F7C0FC01A1D3DBFE49BB4DB3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B831EB67D91F6A572549C8FB /* Pods-Traveller App.debug.xcconfig */,
-				198AEC5D3B7236F44D53FFAA /* Pods-Traveller App.release.xcconfig */,
-				372863D7495CB82323A687D6 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */,
-				17417A6D54AC33D866BB3E09 /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */,
-				FD37ADA57F0B8EDD9EA27E3E /* Pods-Traveller AppTests.debug.xcconfig */,
-				B5E5E4A615D174F733FC8F0D /* Pods-Traveller AppTests.release.xcconfig */,
+				5B51BDCA2119C0A4B3262B6F /* Pods-Traveller App.debug.xcconfig */,
+				1FACB18F27E167AA3E5366D6 /* Pods-Traveller App.release.xcconfig */,
+				94BCB0CB3FB617880A4C6862 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */,
+				D16442A77AA08830E92CC34C /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */,
+				FBCFE21D131446C13E168C6E /* Pods-Traveller AppTests.debug.xcconfig */,
+				3CFB9D1273398D1F901626C7 /* Pods-Traveller AppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF8684C258EA85200415D45 /* Build configuration list for PBXNativeTarget "Traveller App" */;
 			buildPhases = (
-				D950BC2EDB7D7C00BAE6B771 /* [CP] Check Pods Manifest.lock */,
+				7233646C61E347963C24F082 /* [CP] Check Pods Manifest.lock */,
 				3AF86820258EA85200415D45 /* Sources */,
 				3AF86821258EA85200415D45 /* Frameworks */,
 				3AF86822258EA85200415D45 /* Resources */,
@@ -268,7 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF8684F258EA85200415D45 /* Build configuration list for PBXNativeTarget "Traveller AppTests" */;
 			buildPhases = (
-				CB3EB88EE83040EBDC15D947 /* [CP] Check Pods Manifest.lock */,
+				C2B59A2AB1E8E804B1A4FA98 /* [CP] Check Pods Manifest.lock */,
 				3AF86834258EA85200415D45 /* Sources */,
 				3AF86835258EA85200415D45 /* Frameworks */,
 				3AF86836258EA85200415D45 /* Resources */,
@@ -287,7 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AF86852258EA85200415D45 /* Build configuration list for PBXNativeTarget "Traveller AppUITests" */;
 			buildPhases = (
-				06357B85A5E0848056F7249C /* [CP] Check Pods Manifest.lock */,
+				F2920EA013A429E6051FFD3F /* [CP] Check Pods Manifest.lock */,
 				3AF8683F258EA85200415D45 /* Sources */,
 				3AF86840258EA85200415D45 /* Frameworks */,
 				3AF86841258EA85200415D45 /* Resources */,
@@ -377,7 +377,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06357B85A5E0848056F7249C /* [CP] Check Pods Manifest.lock */ = {
+		7233646C61E347963C24F082 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,14 +392,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Traveller App-Traveller AppUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Traveller App-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB3EB88EE83040EBDC15D947 /* [CP] Check Pods Manifest.lock */ = {
+		C2B59A2AB1E8E804B1A4FA98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,7 +421,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D950BC2EDB7D7C00BAE6B771 /* [CP] Check Pods Manifest.lock */ = {
+		F2920EA013A429E6051FFD3F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,7 +436,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Traveller App-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Traveller App-Traveller AppUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,7 +551,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,7 +607,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -624,7 +624,7 @@
 		};
 		3AF8684D258EA85200415D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B831EB67D91F6A572549C8FB /* Pods-Traveller App.debug.xcconfig */;
+			baseConfigurationReference = 5B51BDCA2119C0A4B3262B6F /* Pods-Traveller App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -639,7 +639,7 @@
 		};
 		3AF8684E258EA85200415D45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 198AEC5D3B7236F44D53FFAA /* Pods-Traveller App.release.xcconfig */;
+			baseConfigurationReference = 1FACB18F27E167AA3E5366D6 /* Pods-Traveller App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -654,7 +654,7 @@
 		};
 		3AF86850258EA85200415D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD37ADA57F0B8EDD9EA27E3E /* Pods-Traveller AppTests.debug.xcconfig */;
+			baseConfigurationReference = FBCFE21D131446C13E168C6E /* Pods-Traveller AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -671,7 +671,7 @@
 		};
 		3AF86851258EA85200415D45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5E5E4A615D174F733FC8F0D /* Pods-Traveller AppTests.release.xcconfig */;
+			baseConfigurationReference = 3CFB9D1273398D1F901626C7 /* Pods-Traveller AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -688,7 +688,7 @@
 		};
 		3AF86853258EA85200415D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 372863D7495CB82323A687D6 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */;
+			baseConfigurationReference = 94BCB0CB3FB617880A4C6862 /* Pods-Traveller App-Traveller AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,7 +704,7 @@
 		};
 		3AF86854258EA85200415D45 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17417A6D54AC33D866BB3E09 /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */;
+			baseConfigurationReference = D16442A77AA08830E92CC34C /* Pods-Traveller App-Traveller AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

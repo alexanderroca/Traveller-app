@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class SignInViewController: UIViewController {
 
@@ -28,5 +30,43 @@ class SignInViewController: UIViewController {
     
     @IBAction func ifPressed(_ sender: Any) {
         
+        if (username.text?.isEmpty == true){
+            print("No text in username")
+            return
+        }
+        
+        if (password.text?.isEmpty == true){
+            print("No text in password")
+            return
+        }
+        
+        login()
+        
     }
+    
+    func login(){
+        
+        Auth.auth().signIn(withEmail: username.text!, password: password.text!) { [weak self] authResult, err in
+            
+            guard let strongSelf = self else {return}
+            if let err = err{
+                print(err.localizedDescription)
+            }else{
+                self!.checkUserInfo()
+            }
+            
+        }
+        
+    }
+    
+    func checkUserInfo(){
+        
+        if Auth.auth().currentUser != nil{
+            print(Auth.auth().currentUser?.uid)
+            //Chnage screen to home
+            performSegue(withIdentifier: "home", sender: self)
+        }
+        
+    }
+    
 }

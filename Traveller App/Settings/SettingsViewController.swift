@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase	
 
 class SettingsViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getInfoFromFirestore()
 
         // Do any additional setup after loading the view.
     }
@@ -40,5 +43,14 @@ class SettingsViewController: UIViewController {
         self._email.text = email
         self._country.text = country
     }
+    
+    
+    func getInfoFromFirestore(){
+        
+        
+        let docRef = db.collection("cities").document("SF")
+        
+    }
+    
 
 }

@@ -9,6 +9,7 @@ target 'Traveller App' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
 	pod 'FSCalendar'
+	pod 'Firebase/Auth'
 
   target 'Traveller AppTests' do
     inherit! :search_paths
