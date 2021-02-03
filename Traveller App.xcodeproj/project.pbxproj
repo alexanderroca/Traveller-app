@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A2C17C525CA0F0D001CD850 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C17C425CA0F0C001CD850 /* GoogleService-Info.plist */; };
 		3A2C17C825CA1E24001CD850 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C17C725CA1E24001CD850 /* SignInViewController.swift */; };
+		3A8BF4C125CB492600327F09 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BF4C025CB492600327F09 /* SignUpViewController.swift */; };
 		3AF86828258EA85200415D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86827258EA85200415D45 /* AppDelegate.swift */; };
 		3AF8682A258EA85200415D45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF86829258EA85200415D45 /* ViewController.swift */; };
 		3AF8682D258EA85200415D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF8682B258EA85200415D45 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		3A2C17C425CA0F0C001CD850 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A2C17C725CA1E24001CD850 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3A8BF4C025CB492600327F09 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3AF86824258EA85200415D45 /* Traveller App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Traveller App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF86827258EA85200415D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF86829258EA85200415D45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		3A8BF4BF25CB48F400327F09 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3A8BF4C025CB492600327F09 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		3AF8681B258EA85200415D45 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		3AF86826258EA85200415D45 /* Traveller App */ = {
 			isa = PBXGroup;
 			children = (
+				3A8BF4BF25CB48F400327F09 /* SignUp */,
 				3A2C17C625CA1E09001CD850 /* SignIn */,
 				3AF86860258EB8EE00415D45 /* Settings */,
 				3AF8685F258EB8E200415D45 /* Search */,
@@ -344,6 +355,7 @@
 				3AF86877258FC22A00415D45 /* DetailedViewController.swift in Sources */,
 				3AF8682A258EA85200415D45 /* ViewController.swift in Sources */,
 				3AF86828258EA85200415D45 /* AppDelegate.swift in Sources */,
+				3A8BF4C125CB492600327F09 /* SignUpViewController.swift in Sources */,
 				3AF86875258FC16900415D45 /* RatingControl.swift in Sources */,
 				3AF86858258EB83C00415D45 /* ActivityViewController.swift in Sources */,
 				3AF86872258FACC100415D45 /* TypeActivityCollectionViewCell.swift in Sources */,
