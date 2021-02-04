@@ -786,13 +786,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="8zF-k2-Zde"/>
                     <connections>
-                        <outlet property="_country" destination="qta-xX-AjJ" id="uSW-Q7-vxh"/>
-                        <outlet property="_dateOfBirth" destination="1BL-Fb-a8v" id="iIU-s9-BtL"/>
-                        <outlet property="_email" destination="2DN-mM-v6W" id="qsY-G8-E0S"/>
-                        <outlet property="_name" destination="gdN-kH-W4o" id="rYq-oM-Xwi"/>
-                        <outlet property="_phone" destination="FX6-Tj-o2X" id="MGX-au-ntj"/>
-                        <outlet property="_userImage" destination="2FZ-4n-4Mg" id="xaH-dr-Pb6"/>
-                        <outlet property="_username" destination="T3O-fp-n6B" id="N7v-Op-byz"/>
+                        <outlet property="_country" destination="qta-xX-AjJ" id="uNW-L2-hS9"/>
+                        <outlet property="_dateOfBirth" destination="1BL-Fb-a8v" id="TN8-Zw-etw"/>
+                        <outlet property="_email" destination="2DN-mM-v6W" id="maw-Mc-wtg"/>
+                        <outlet property="_name" destination="gdN-kH-W4o" id="4j6-rR-y8i"/>
+                        <outlet property="_phone" destination="FX6-Tj-o2X" id="uSR-NZ-VYh"/>
+                        <outlet property="_userImage" destination="2FZ-4n-4Mg" id="g4c-Hx-zUe"/>
+                        <outlet property="_username" destination="T3O-fp-n6B" id="Xme-32-94u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhI-UN-hA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -810,9 +810,6 @@
         <image name="map" width="13" height="16"/>
         <image name="phone" width="800" height="800"/>
         <image name="travelLogo" width="549" height="521"/>
-        <namedColor name="bg">
-            <color red="0.92199999094009399" green="0.60699999332427979" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="bg">
             <color red="0.92199999094009399" green="0.60699999332427979" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
