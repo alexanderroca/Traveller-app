@@ -31,6 +31,7 @@ class DetailedViewController: UIViewController {
         activityLocation.text = location
         
     }
-
+    
+    
 
 }

@@ -278,17 +278,4 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
         
     }
     
-    //Only activities
-    func getActivities(){
-        
-        
-    }
-    
-    //Only adventures
-    func getAdventures(){
-        
-        
-    }
-    
-    
 }

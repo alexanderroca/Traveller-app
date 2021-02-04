@@ -19,6 +19,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var _country: UITextField!
     @IBOutlet weak var _dateOfBirth: UITextField!
     
+    var rootExperience = "i3Du6GMMtBX6Thm2In5D"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,15 +127,24 @@ class SignUpViewController: UIViewController {
             if let err = err {
                 print("Error, couldn't add user: \(err)")
             } else {
-                print("User added successfully")
-                //TODO: Redirect to login page---------------------------------------------------------------------------
+                
+                db.collection("users").document(userUID!).collection("booked").document(self.rootExperience).setData([
+                "root": true])
+                {err in
+                    
+                    if let err = err{
+                        print("Error, couldn't create booked for user")
+                    }else{
+                        print("User added successfully")
+                        //TODO: Redirect to login page---------------------------------------------------------------------------
+                    }
+                    
+                }
+                
             }
+            
         }
         
-        
-        
     }
-    
-    
     
 }
