@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -32,6 +33,108 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func ifSignUpPressed(_ sender: Any) {
+        
+        checkData()
+        
+        
     }
+    
+    func checkData(){
+        
+        if _password.text?.isEmpty == true {
+            //Error, password cant be empty
+            return
+        }
+        
+        if _passwordVerification.text != _password.text {
+            //Error passwords must match
+            return
+        }
+        
+        if _phone.text?.isEmpty == true{
+            //Error phone cant be empty
+            return
+        }
+        
+        if _email.text?.isEmpty == true {
+            //Error, phone can't be empty
+            return
+        }
+        
+        if _country.text?.isEmpty == true {
+            //Error, country cant be empty
+            return
+            
+        }
+        
+        if _dateOfBirth.text?.isEmpty == true {
+            //Error, birthdate cant be empty
+            return
+        }
+        
+        if _username.text?.isEmpty == true {
+            //Error, name can't be empty
+            return
+            
+        }
+        
+        signUp()
+        
+        
+    }
+    
+    
+    func signUp(){
+        
+        let email = _email.text
+        let password = _password.text
+        
+        
+        Auth.auth().createUser(withEmail: email!, password: password!) { (result, error) in
+            
+            if let result = result, error == nil{
+                
+                self.addUserInfo(email: email!, password: password!)
+                
+            }
+            
+        }
+        
+    }
+    
+    func addUserInfo(email: String, password: String){
+        
+        
+        let userUID = Auth.auth().currentUser?.uid
+        let db = Firestore.firestore()
+        
+        let name = _username.text
+        let phone = _phone.text
+        let country = _country.text
+        let dateOfBirth = _dateOfBirth.text
+        
+        
+        db.collection("users").document(userUID!).setData([
+            "name": name,
+            "country": country,
+            "phone": phone,
+            "image": "none",
+            "email": email,
+            "birthDate": dateOfBirth
+            
+        ]) { err in
+            if let err = err {
+                print("Error, couldn't add user: \(err)")
+            } else {
+                print("User added successfully")
+                //TODO: Redirect to login page---------------------------------------------------------------------------
+            }
+        }
+        
+        
+        
+    }
+    
+    
     
 }
