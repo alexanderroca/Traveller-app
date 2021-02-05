@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class DetailedViewController: UIViewController {
 
@@ -22,6 +23,8 @@ class DetailedViewController: UIViewController {
     var name = ""
     var image: UIImage? = nil
     var location = ""
+    var experienceID = ""
+    var imageString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,30 @@ class DetailedViewController: UIViewController {
         
     }
     
-    
 
+    @IBAction func ButtonPressed(_ sender: Any) {
+        
+        let db = Firestore.firestore()
+        
+        let userUID = Auth.auth().currentUser?.uid
+        
+        db.collection("users").document(userUID!).collection("booked").document(self.experienceID).setData([
+            "name": name,
+            "image": imageString,
+            "participants": numberOfPeople.selectedSegmentIndex + 1,
+            "location": location,
+            "root": false
+            
+        ]) { err in
+            if let err = err {
+                print("Error, couldn't add user: \(err)")
+            } else {
+                print("Experience booked!")
+                
+            }
+            
+        }
+        
+        
+    }
 }

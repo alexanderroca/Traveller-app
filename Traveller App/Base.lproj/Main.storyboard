@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="lgo-JQ-qGI" customClass="SignInViewController" customModule="Traveller_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCR-o6-VyQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="travelLogo" translatesAutoresizingMaskIntoConstraints="NO" id="c08-Gh-8Yg">
@@ -56,7 +56,6 @@
                                 </state>
                                 <connections>
                                     <action selector="ifPressed:" destination="lgo-JQ-qGI" eventType="touchUpInside" id="N5g-lH-bz2"/>
-                                    <segue destination="D82-NA-nau" kind="show" id="jYT-VW-9YF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AppTraveller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1W-w6-oek">
@@ -394,6 +393,9 @@
                         <color key="backgroundColor" name="bg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Book" id="KSP-G6-skH"/>
+                    <connections>
+                        <outlet property="collectionView" destination="b8b-ui-HbT" id="Kaq-1f-6u2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mo-NB-GUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -617,6 +619,9 @@
                                         <state key="normal" title="Book an experience" image="arrow">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="lKf-gG-PWe" eventType="touchDown" id="TB0-sA-IrR"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-Xf-6bi" customClass="RatingControl" customModule="Traveller_App" customModuleProvider="target">
                                         <rect key="frame" x="8" y="79" width="186" height="19"/>
@@ -764,9 +769,6 @@
             <point key="canvasLocation" x="613.60000000000002" y="921.58920539730138"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="cc2-dY-hQp"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Save" width="48" height="48"/>
         <image name="Setting" width="24" height="24"/>

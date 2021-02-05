@@ -42,6 +42,7 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
     struct Event {
         var name: String
         var eventImage: UIImage
+        var imageString: String
         var location: String
         var category: String
         var eventID: String
@@ -60,8 +61,9 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         getExperiences()
+        super.viewDidLoad()
+        
         //activitiesCollectionView.reloadData()
         
     }
@@ -160,6 +162,8 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
                     vc?.name = _experiences[indexPath.row].name
                     vc?.image = _experiences[indexPath.row].eventImage
                     vc?.location = _experiences[indexPath.row].location
+                    vc?.experienceID = _experiences[indexPath.row].eventID
+                    vc?.imageString = _experiences[indexPath.row].imageString
                     //ENDs here
                     break
                 case 1:
@@ -174,6 +178,8 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
                     vc?.name = _adventures[indexPath.row].name
                     vc?.image = _adventures[indexPath.row].eventImage
                     vc?.location = _adventures[indexPath.row].location
+                    vc?.experienceID = _adventures[indexPath.row].eventID
+                    vc?.imageString = _adventures[indexPath.row].imageString
                     //ENDs here
                 case 2:
                     
@@ -187,6 +193,8 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
                     vc?.name = _activities[indexPath.row].name
                     vc?.image = _activities[indexPath.row].eventImage
                     vc?.location = _activities[indexPath.row].location
+                    vc?.experienceID = _activities[indexPath.row].eventID
+                    vc?.imageString = _activities[indexPath.row].imageString
                     //ENDs here
                 default: break
             }   //switch
@@ -244,7 +252,7 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
                             
                          }
                         
-                        let event = Event(name: name, eventImage: image2!, location: location, category: category, eventID: eventID)
+                        let event = Event(name: name, eventImage: image2!, imageString: imageString, location: location, category: category, eventID: eventID)
                         
                         
                         switch category {
@@ -270,8 +278,9 @@ class HomeViewController: UIViewController , UICollectionViewDataSource, UIColle
                         
                     }
                     
+                    self.activitiesCollectionView.reloadData()
+                    
                 }
-                
                 
         }
         

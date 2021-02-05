@@ -333,6 +333,9 @@
 		3AF8681C258EA85200415D45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					indexPath.item,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Alexander Roca - Joan Esteban";
