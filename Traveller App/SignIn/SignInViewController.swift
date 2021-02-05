@@ -50,6 +50,9 @@ class SignInViewController: UIViewController {
             guard let strongSelf = self else {return}
             if let err = err{
                 print(err.localizedDescription)
+                let alert = UIAlertController(title: "Login incorrect", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+                self!.present(alert, animated: true, completion: nil)
             }else{
                 self!.checkUserInfo()
             }

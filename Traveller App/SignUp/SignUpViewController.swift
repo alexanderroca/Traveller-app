@@ -44,37 +44,58 @@ class SignUpViewController: UIViewController {
         
         if _password.text?.isEmpty == true {
             //Error, password cant be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "Pasasword cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if _passwordVerification.text != _password.text {
             //Error passwords must match
+            let alert = UIAlertController(title: "Incorrect info", message: "passwords must match", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if _phone.text?.isEmpty == true{
             //Error phone cant be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "Phone cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if _email.text?.isEmpty == true {
             //Error, phone can't be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "email cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if _country.text?.isEmpty == true {
             //Error, country cant be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "country cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
             
         }
         
         if _dateOfBirth.text?.isEmpty == true {
             //Error, birthdate cant be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "birthdate cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
         if _username.text?.isEmpty == true {
             //Error, name can't be empty
+            let alert = UIAlertController(title: "Incorrect info", message: "name cant be empty", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
             
         }
@@ -119,7 +140,7 @@ class SignUpViewController: UIViewController {
             "name": name,
             "country": country,
             "phone": phone,
-            "image": "none",
+            "image": "https://i.pinimg.com/originals/3d/09/d2/3d09d260e77e9db5a52c54e15d2d0294.jpg",
             "email": email,
             "birthDate": dateOfBirth
             
@@ -134,8 +155,14 @@ class SignUpViewController: UIViewController {
                     
                     if let err = err{
                         print("Error, couldn't create booked for user")
+                        let alert = UIAlertController(title: "Something went wrong...", message: "Couldnt connect with database", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }else{
                         print("User added successfully")
+                        let alert = UIAlertController(title: "User created!", message: "", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                         //TODO: Redirect to login page---------------------------------------------------------------------------
                     }
                     

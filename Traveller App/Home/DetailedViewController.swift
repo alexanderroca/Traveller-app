@@ -42,6 +42,8 @@ class DetailedViewController: UIViewController {
         
         let userUID = Auth.auth().currentUser?.uid
         
+        print("Booked pressed")
+        
         db.collection("users").document(userUID!).collection("booked").document(self.experienceID).setData([
             "name": name,
             "image": imageString,
@@ -51,9 +53,15 @@ class DetailedViewController: UIViewController {
             
         ]) { err in
             if let err = err {
-                print("Error, couldn't add user: \(err)")
+                print("Error, couldn't book: \(err)")
+                let alert = UIAlertController(title: "Something went wrong", message: "Couldn't process booking, try later", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             } else {
                 print("Experience booked!")
+                let alert = UIAlertController(title: "Experience booked", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 
             }
             
